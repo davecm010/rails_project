@@ -8,6 +8,6 @@ class ArticlesController < ApplicationController
   end
 
   def new
-
-  end 
+    @article = Article.new 
+  end
 end
