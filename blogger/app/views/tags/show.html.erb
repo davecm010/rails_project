@@ -6,6 +6,9 @@
   <% end %>
 
   <%= link_to "<< Back to Articles List", articles_path %>
+  <%= link_to "Delete", tag_path(@tag), method: :delete,
+      data: {confirm: "Do you really want to delete this tag?"} %>
+  <%= link_to "Back to Tags List>>", tags_path %>
 
 
 </ul>
